@@ -2,7 +2,7 @@
 
 Clone da página de login da netflix usando apenas com HTML e CSS!
 
-## [Demo](https://dev-paixao.github.io/landing-page-coffee/)
+## [Demo](https://https://dev-paixao.github.io/clone-netflix-login//)
 
 ## Preview
 ![Preview](./img/preview.jpg)
