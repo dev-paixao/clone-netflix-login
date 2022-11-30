@@ -4,7 +4,9 @@ body {
     margin: 0;
     height: 100vh;
     width: 100%;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-image: url(../img/background.jpg);
     background-image: cover;
     background-repeat: no-repeat;
@@ -16,7 +18,7 @@ body::before {
     content: '';
     background-color: rgb(0, 0, 0, .5);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     position: absolute;
     top: 0;
     bottom: 0;
@@ -29,22 +31,24 @@ body::before {
 }
 
 .cabecalho {
-    padding: 20px 50px;
-    position: relative;
+    padding: 1%;
+    margin-left: 5%;
+    width: 100%;
+    display: flex;
+    align-content: flex-start;
     z-index: 10;
 }
 
 .conteudo {
-    padding: 60px;
+    padding: 3% 60px 0px;
     z-index: 90;
-    position: relative;
+    display: flex;
+    flex-direction: column;
     max-width: 450px;
     min-height: 660px;
-    margin-left: 50%;
     background-color: rgb(0, 0, 0, 0.75);
     border-radius: 10px;
     box-sizing: border-box;
-    transform: translateX(-50%);
 }
 
 .conteudo h1 {
@@ -172,4 +176,50 @@ body::before {
     font-family: inherit;
     font-size: inherit;
     padding: 0;
+}
+
+.footerbox{
+    background: rgba(0,0,0,.75);
+    margin-top: 0;
+    color: #757575;
+    font-size: 1em;
+    margin-top: 80px;
+    min-width: 190px;
+    height: 25vh;
+    padding-bottom: 20px;
+    position: relative;
+    width: 100%;
+
+}
+
+.footer-top{
+    margin: 0 0 30px;
+    padding: 0;
+}
+
+/* Responsivo */
+
+@media (max-width: 739px) {
+    body{
+        background-color: #000;
+        background-image: none;
+    }
+
+    .conteudo {
+        padding: 0% 4% 0%;
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        min-height: 660px;
+    }
+
+}
+
+@media (max-width: 440px) {
+    .logo img {
+        width: 75px;
+    }
+
+
 }
